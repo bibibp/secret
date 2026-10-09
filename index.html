@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#493c32">
+  <title>A Letter Made of Memories</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="world">
+    <div class="sun"></div>
+    <div class="cloud cloud-one"></div>
+    <div class="cloud cloud-two"></div>
+
+    <div class="mountains"></div>
+
+    <header class="topbar">
+      <div class="brand">▰ BLOCK WORLD</div>
+      <button id="musicToggle" class="music-toggle">♫ MUSIK OFF</button>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">A LITTLE GIFT FOR SOMEONE SPECIAL</p>
+      <h1>A Letter Made<br>of Memories<span>.</span></h1>
+      <p class="subtitle">
+        sebuah surat kecil, untuk seseorang yang telah menjadi
+        bagian dari cerita selama hampir satu tahun.
+      </p>
+    </section>
+
+    <section class="scene" aria-label="Dunia Minecraft">
+      <div class="village">
+        <div class="house house-one">
+          <div class="roof"></div>
+          <div class="house-wall">
+            <div class="window"></div>
+            <div class="door"></div>
+          </div>
+        </div>
+
+        <div class="house house-two">
+          <div class="roof"></div>
+          <div class="house-wall">
+            <div class="window"></div>
+            <div class="door"></div>
+          </div>
+        </div>
+
+        <div class="tree tree-one"><i></i></div>
+        <div class="tree tree-two"><i></i></div>
+        <div class="tree tree-three"><i></i></div>
+
+        <div class="ground"></div>
+        <div class="path"></div>
+
+        <div class="lantern lantern-one"></div>
+        <div class="lantern lantern-two"></div>
+        <div class="lantern lantern-three"></div>
+      </div>
+
+      <div class="people">
+        <div class="person">
+          <div class="photo-frame">
+            <img src="./WhatsApp Image 2026-10-09 at 19.39.13.jpeg" alt="Foto Farel">
+          </div>
+          <div class="person-name">FAREL</div>
+          <div class="pixel-person boy">
+            <div class="head">
+              <div class="hair"></div>
+              <div class="eyes"></div>
+            </div>
+            <div class="body"></div>
+            <div class="legs"></div>
+          </div>
+          <p>made by <strong>farel</strong></p>
+        </div>
+
+        <div class="letter-area">
+          <div class="sparkle">✦</div>
+          <button id="openLetter" class="letter" aria-label="Buka surat">
+            <span class="letter-top"></span>
+            <span class="letter-seal">✦</span>
+            <span class="letter-label">FOR YOU</span>
+          </button>
+          <p class="click-hint" id="letterHint">↑ tekan suratnya</p>
+        </div>
+
+        <div class="person">
+          <div class="photo-frame">
+            <img src="./WhatsApp Image 2026-10-10 at 00.03.50.jpeg" alt="Foto penerima">
+          </div>
+          <div class="person-name">PIE</div>
+          <div class="pixel-person girl">
+            <div class="head">
+              <div class="hair"></div>
+              <div class="eyes"></div>
+            </div>
+            <div class="body"></div>
+            <div class="legs"></div>
+          </div>
+          <p>for <strong>pie</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>✦ A SMALL WORLD, A MEANINGFUL MEMORY ✦</span>
+    </footer>
+
+    <!-- SURAT -->
+    <div class="modal hidden" id="letterModal" role="dialog"
+         aria-modal="true" aria-labelledby="letterTitle">
+      <article class="letter-paper">
+        <button id="closeLetter" class="close-button"
+                aria-label="Tutup surat">✕</button>
+
+        <div class="paper-icon">✉</div>
+        <p class="paper-eyebrow">A LETTER FROM FAREL</p>
+        <h2 id="letterTitle">untuk pie,</h2>
+
+        <div class="letter-content" id="letterContent">
+          <p>
+            hampir satu tahun, ya, kita saling mengenal.
+            rasanya baru kemarin semuanya dimulai, tetapi
+            sekarang sudah banyak cerita yang kita lewati.
+          </p>
+
+          <p>
+            ada hal-hal sederhana yang ternyata masih aku ingat.
+            termasuk waktu kita nonton film, saat kamu malah
+            ketiduran sampai ngorok sebelum filmnya selesai.
+            kamu sudah punya dunia sendiri, sementara filmnya
+            masih berjalan. sampai sekarang, itu masih jadi
+            salah satu momen paling epik wkwk.
+          </p>
+
+          <p>
+            belum lagi kebiasaan kamu begadang dan berbagai
+            tingkah yang kadang bikin aku heran sekaligus tertawa.
+            mungkin buat orang lain itu hal biasa, tetapi buatku,
+            hal-hal kecil seperti itu menjadi bagian dari cerita
+            yang menyenangkan untuk diingat.
+          </p>
+
+          <p>
+            terima kasih karena sudah menjadi bagian dari hari-hariku.
+            terima kasih untuk waktu, cerita, tawa, dan kesempatan
+            untuk saling mengenal selama ini. aku benar-benar
+            menghargai kehadiran kamu dalam pertemanan ini.
+          </p>
+
+          <p>
+            aku juga mau minta maaf kalau selama kita berteman,
+            ada perkataan atau sikapku yang pernah bikin kamu
+            nggak nyaman, kecewa, atau tanpa sadar menyakiti
+            perasaan kamu. mungkin ada hal yang nggak aku sadari,
+            atau ada saat-saat ketika aku belum bisa menjadi
+            teman yang baik.
+          </p>
+
+          <p>
+            aku nggak bermaksud membenarkan kesalahanku.
+            aku cuma ingin kamu tahu kalau aku menghargai
+            pertemanan ini, termasuk perasaan kamu di dalamnya.
+            kita sama-sama masih belajar memahami satu sama lain.
+          </p>
+
+          <p>
+            aku nggak tahu bagaimana cerita kita ke depannya.
+            tetapi, aku berharap semua kenangan baik ini tetap
+            bisa kita ingat sebagai sesuatu yang berarti.
+          </p>
+
+          <p>
+            terima kasih sudah menjadi bagian dari hampir satu
+            tahun perjalanan ini. maaf untuk segala kekuranganku,
+            dan terima kasih untuk semua kenangan yang sudah kita buat.
+          </p>
+
+          <p class="signature">
+            semoga suatu hari nanti, ketika kita mengingat masa ini,
+            yang tersisa adalah senyum karena kita pernah berbagi
+            cerita, tawa, dan waktu yang berarti.
+          </p>
+
+          <p class="sign-off">— farel</p>
+        </div>
+
+        <div class="paper-bottom">✦ END OF LETTER ✦</div>
+      </article>
+    </div>
+
+    <audio id="backgroundMusic" src="./Tulus_-_Monokrom_(mp3.pm).mp3" loop preload="auto"></audio>
+  </main>
+</body>
+</html>
